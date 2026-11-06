@@ -1,0 +1,343 @@
+2026-11-04 09:40:23,630 mob_suite.mob_recon INFO: MOB-recon version 3.1.9  [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:984]
+2026-11-04 09:40:23,630 mob_suite.mob_recon INFO: SUCCESS: Found program blastn at /home/lusa/miniconda3/envs/mob_suite/bin/blastn [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:597]
+2026-11-04 09:40:23,630 mob_suite.mob_recon INFO: SUCCESS: Found program makeblastdb at /home/lusa/miniconda3/envs/mob_suite/bin/makeblastdb [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:597]
+2026-11-04 09:40:23,630 mob_suite.mob_recon INFO: SUCCESS: Found program tblastn at /home/lusa/miniconda3/envs/mob_suite/bin/tblastn [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:597]
+2026-11-04 09:40:23,630 mob_suite.mob_recon INFO: Processing fasta file genomas_completos/spades/pc1_scaffolds.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1011]
+2026-11-04 09:40:23,630 mob_suite.mob_recon INFO: Analysis directory resultados/05_mob/pc1 [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1012]
+2026-11-04 09:40:25,160 mob_suite.mob_recon INFO: Writing cleaned header input fasta file from genomas_completos/spades/pc1_scaffolds.fasta to resultados/05_mob/pc1/__tmp/fixed.input.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1107]
+2026-11-04 09:40:25,575 mob_suite.mob_recon INFO: Running internal circular contig detection on resultados/05_mob/pc1/__tmp/fixed.input.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1118]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/wrappers/__init__.py:104: FutureWarning: the 'line_terminator'' keyword is deprecated, use 'lineterminator' instead.
+  blast_df.to_csv(blast_results_file, sep='\t', header=False, line_terminator='\n', index=False)
+2026-11-04 09:40:27,547 root INFO: Blasting replicon sequences /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/databases/rep.dna.fas against resultados/05_mob/pc1/__tmp/fixed.input.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1163]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:338: FutureWarning: the 'line_terminator'' keyword is deprecated, use 'lineterminator' instead.
+  blast_df.to_csv(blast_results_file, sep='\t', header=True, line_terminator='\n', index=False)
+2026-11-04 09:40:28,342 root INFO: Filtering replicon blast results resultados/05_mob/pc1/__tmp/replicon_blast_results.txt  [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1168]
+2026-11-04 09:40:28,432 root INFO: Blasting relaxase sequences /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/databases/mob.proteins.faa against resultados/05_mob/pc1/__tmp/fixed.input.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1186]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:365: FutureWarning: the 'line_terminator'' keyword is deprecated, use 'lineterminator' instead.
+  blast_df.to_csv(blast_results_file, sep='\t', header=True, line_terminator='\n', index=False)
+2026-11-04 09:41:01,832 root INFO: Filtering relaxase blast results resultados/05_mob/pc1/__tmp/mob_blast_results.txt  [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1191]
+2026-11-04 09:41:01,866 root INFO: Blasting MPF sequences /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/databases/mpf.proteins.faa against resultados/05_mob/pc1/__tmp/fixed.input.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1210]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:365: FutureWarning: the 'line_terminator'' keyword is deprecated, use 'lineterminator' instead.
+  blast_df.to_csv(blast_results_file, sep='\t', header=True, line_terminator='\n', index=False)
+2026-11-04 09:41:24,918 root INFO: Filtering MPF blast results resultados/05_mob/pc1/__tmp/mpf_blast_results.txt  [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1225]
+2026-11-04 09:41:24,919 root INFO: Blasting orit sequences /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/databases/orit.fas against resultados/05_mob/pc1/__tmp/fixed.input.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1234]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:338: FutureWarning: the 'line_terminator'' keyword is deprecated, use 'lineterminator' instead.
+  blast_df.to_csv(blast_results_file, sep='\t', header=True, line_terminator='\n', index=False)
+2026-11-04 09:41:25,174 root INFO: Filtering orit blast results resultados/05_mob/pc1/__tmp/orit_blast_results.txt  [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1239]
+2026-11-04 09:41:25,212 root INFO: Blasting contigs against repetitive sequences db: /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/databases/repetitive.dna.fas [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1256]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:338: FutureWarning: the 'line_terminator'' keyword is deprecated, use 'lineterminator' instead.
+  blast_df.to_csv(blast_results_file, sep='\t', header=True, line_terminator='\n', index=False)
+2026-11-04 09:41:26,674 root INFO: Filtering repetitive blast results resultados/05_mob/pc1/__tmp/repetitive_blast_results.txt  [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1260]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,691 root INFO: Filtering contig: 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 131_393250735d949043c13b312784cb0bf5_circular=false_1098 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 89_734f394940d3921e67e05ae652e16404_circular=false_4550 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 131_393250735d949043c13b312784cb0bf5_circular=false_1098 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 131_393250735d949043c13b312784cb0bf5_circular=false_1098 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,692 root INFO: Filtering contig: 112_d41545ed0c075fe30bb0eb81e87ede6f_circular=false_2513 due to repetitive sequence [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1275]
+2026-11-04 09:41:26,693 root INFO: Blasting contigs against reference sequence db: /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/databases/ncbi_plasmid_full_seqs.fas [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1264]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:338: FutureWarning: the 'line_terminator'' keyword is deprecated, use 'lineterminator' instead.
+  blast_df.to_csv(blast_results_file, sep='\t', header=True, line_terminator='\n', index=False)
+2026-11-04 09:42:57,790 root INFO: Filtering contig blast results: resultados/05_mob/pc1/__tmp/contig_blast_results.txt [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1269]
+2026-11-04 09:43:01,403 root INFO: Assigning contigs to plasmid groups [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1284]
+Not 126_6fbf623d6998bd0a785ba8695748544e_circular=false_1274 to cluster AE809 assigned as already present in cluster AE809
+Not 46_08e7688aa407304e8ffebdfb050be859_circular=false_34104 to cluster AE809 assigned as already present in cluster AE809
+Not 79_1a2ebedc219adbbee98420b74dd42f2b_circular=false_7049 to cluster AE809 assigned as already present in cluster AE809
+Not 126_6fbf623d6998bd0a785ba8695748544e_circular=false_1274 to cluster AE809 assigned as already present in cluster AE809
+Not 46_08e7688aa407304e8ffebdfb050be859_circular=false_34104 to cluster AE809 assigned as already present in cluster AE809
+Not 79_1a2ebedc219adbbee98420b74dd42f2b_circular=false_7049 to cluster AE809 assigned as already present in cluster AE809
+Not 126_6fbf623d6998bd0a785ba8695748544e_circular=false_1274 to cluster AE809 assigned as already present in cluster AE809
+Not 46_08e7688aa407304e8ffebdfb050be859_circular=false_34104 to cluster AE809 assigned as already present in cluster AE809
+Not 79_1a2ebedc219adbbee98420b74dd42f2b_circular=false_7049 to cluster AE809 assigned as already present in cluster AE809
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AA405 assigned as already present in cluster AA336
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA405 assigned as already present in cluster AA942
+Not 131_393250735d949043c13b312784cb0bf5_circular=false_1098 to cluster AA405 assigned as already present in cluster AA338
+Not 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 to cluster AA405 assigned as already present in cluster AA338
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AA035 assigned as already present in cluster AA405
+Not 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 to cluster AA035 assigned as already present in cluster AA405
+Not 115_84c13ed4c356b45539a95839bca34060_circular=false_1958 to cluster AA035 assigned as already present in cluster AA405
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA035 assigned as already present in cluster AA942
+Not 123_80a65b17d7127be491cbdc9d9c70f73f_circular=false_1483 to cluster AA035 assigned as already present in cluster AA405
+Not 129_0fe566eee9e80a6cf048016003f04871_circular=false_1146 to cluster AA035 assigned as already present in cluster AA405
+Not 52_cb8be461e329526b38fdf91a1cc810a8_circular=false_22202 to cluster AA035 assigned as already present in cluster AA405
+Not 96_752f2c6e9c169f8b3813467195fbe634_circular=false_4212 to cluster AA035 assigned as already present in cluster AA405
+Not 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 to cluster AA035 assigned as already present in cluster AA405
+Not 100_efe996f852cc2e11f1aed66978e1de14_circular=false_3937 to cluster AA405 assigned as already present in cluster AA405
+Not 101_8e6303eefb6fc369a5ddaa3d0285cdb2_circular=false_3795 to cluster AA405 assigned as already present in cluster AA405
+Not 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 to cluster AA405 assigned as already present in cluster AA405
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AA405 assigned as already present in cluster AA336
+Not 107_1fb2e45f57c32b60414a585204132556_circular=false_2943 to cluster AA405 assigned as already present in cluster AA405
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AA405 assigned as already present in cluster AA405
+Not 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 to cluster AA405 assigned as already present in cluster AA405
+Not 115_84c13ed4c356b45539a95839bca34060_circular=false_1958 to cluster AA405 assigned as already present in cluster AA405
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA405 assigned as already present in cluster AA942
+Not 119_0278237b4a5082a5799cff47ec7277d1_circular=false_1734 to cluster AA405 assigned as already present in cluster AA405
+Not 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 to cluster AA405 assigned as already present in cluster AA405
+Not 123_80a65b17d7127be491cbdc9d9c70f73f_circular=false_1483 to cluster AA405 assigned as already present in cluster AA405
+Not 125_22a2420479c17264fa368eb1ae659d07_circular=false_1303 to cluster AA405 assigned as already present in cluster AA405
+Not 129_0fe566eee9e80a6cf048016003f04871_circular=false_1146 to cluster AA405 assigned as already present in cluster AA405
+Not 131_393250735d949043c13b312784cb0bf5_circular=false_1098 to cluster AA405 assigned as already present in cluster AA338
+Not 40_0192dc921e4f5eefb7ccc40473d2a097_circular=false_41505 to cluster AA405 assigned as already present in cluster AA405
+Not 50_5e6a97a7c03999263bef221429251ced_circular=false_24801 to cluster AA405 assigned as already present in cluster AA405
+Not 52_cb8be461e329526b38fdf91a1cc810a8_circular=false_22202 to cluster AA405 assigned as already present in cluster AA405
+Not 53_3704bcca876fd3a1102373b9bde589f6_circular=false_21917 to cluster AA405 assigned as already present in cluster AA405
+Not 58_033c4788882d3bf26c502fcc42349c4e_circular=false_15374 to cluster AA405 assigned as already present in cluster AA405
+Not 63_3f0969f1445257b68165e06b4ad1e1d3_circular=false_13381 to cluster AA405 assigned as already present in cluster AA405
+Not 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 to cluster AA405 assigned as already present in cluster AA405
+Not 75_530b80e4b05ed7c218232ea4c9d4e564_circular=false_8421 to cluster AA405 assigned as already present in cluster AA405
+Not 77_fc4424a30081a85ae78139dd9f4a8601_circular=false_7433 to cluster AA405 assigned as already present in cluster AA405
+Not 80_b4d051101ac12658d603249e0a21ec85_circular=false_6971 to cluster AA405 assigned as already present in cluster AA405
+Not 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 to cluster AA405 assigned as already present in cluster AA338
+Not 86_8b1509e79e99bac52477f69d50d98ac4_circular=false_4718 to cluster AA405 assigned as already present in cluster AA405
+Not 87_1ecd78dd6e8f2fa697110e8af549bc9b_circular=false_4693 to cluster AA405 assigned as already present in cluster AA405
+Not 91_1fa4ab75d09fbccd97d2b516ab6702e4_circular=false_4434 to cluster AA405 assigned as already present in cluster AA405
+Not 94_669046d08bb473b8a2b69859a9c9e7d2_circular=false_4297 to cluster AA405 assigned as already present in cluster AA405
+Not 96_752f2c6e9c169f8b3813467195fbe634_circular=false_4212 to cluster AA405 assigned as already present in cluster AA405
+Not 97_345517f92309e118175dfd778a93e45f_circular=false_4113 to cluster AA405 assigned as already present in cluster AA405
+Not 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 to cluster AA405 assigned as already present in cluster AA405
+Not 100_efe996f852cc2e11f1aed66978e1de14_circular=false_3937 to cluster AA405 assigned as already present in cluster AA405
+Not 101_8e6303eefb6fc369a5ddaa3d0285cdb2_circular=false_3795 to cluster AA405 assigned as already present in cluster AA405
+Not 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 to cluster AA405 assigned as already present in cluster AA405
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AA405 assigned as already present in cluster AA336
+Not 107_1fb2e45f57c32b60414a585204132556_circular=false_2943 to cluster AA405 assigned as already present in cluster AA405
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AA405 assigned as already present in cluster AA405
+Not 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 to cluster AA405 assigned as already present in cluster AA405
+Not 115_84c13ed4c356b45539a95839bca34060_circular=false_1958 to cluster AA405 assigned as already present in cluster AA405
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA405 assigned as already present in cluster AA942
+Not 119_0278237b4a5082a5799cff47ec7277d1_circular=false_1734 to cluster AA405 assigned as already present in cluster AA405
+Not 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 to cluster AA405 assigned as already present in cluster AA405
+Not 123_80a65b17d7127be491cbdc9d9c70f73f_circular=false_1483 to cluster AA405 assigned as already present in cluster AA405
+Not 125_22a2420479c17264fa368eb1ae659d07_circular=false_1303 to cluster AA405 assigned as already present in cluster AA405
+Not 129_0fe566eee9e80a6cf048016003f04871_circular=false_1146 to cluster AA405 assigned as already present in cluster AA405
+Not 131_393250735d949043c13b312784cb0bf5_circular=false_1098 to cluster AA405 assigned as already present in cluster AA338
+Not 40_0192dc921e4f5eefb7ccc40473d2a097_circular=false_41505 to cluster AA405 assigned as already present in cluster AA405
+Not 50_5e6a97a7c03999263bef221429251ced_circular=false_24801 to cluster AA405 assigned as already present in cluster AA405
+Not 52_cb8be461e329526b38fdf91a1cc810a8_circular=false_22202 to cluster AA405 assigned as already present in cluster AA405
+Not 53_3704bcca876fd3a1102373b9bde589f6_circular=false_21917 to cluster AA405 assigned as already present in cluster AA405
+Not 58_033c4788882d3bf26c502fcc42349c4e_circular=false_15374 to cluster AA405 assigned as already present in cluster AA405
+Not 63_3f0969f1445257b68165e06b4ad1e1d3_circular=false_13381 to cluster AA405 assigned as already present in cluster AA405
+Not 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 to cluster AA405 assigned as already present in cluster AA405
+Not 75_530b80e4b05ed7c218232ea4c9d4e564_circular=false_8421 to cluster AA405 assigned as already present in cluster AA405
+Not 77_fc4424a30081a85ae78139dd9f4a8601_circular=false_7433 to cluster AA405 assigned as already present in cluster AA405
+Not 80_b4d051101ac12658d603249e0a21ec85_circular=false_6971 to cluster AA405 assigned as already present in cluster AA405
+Not 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 to cluster AA405 assigned as already present in cluster AA338
+Not 86_8b1509e79e99bac52477f69d50d98ac4_circular=false_4718 to cluster AA405 assigned as already present in cluster AA405
+Not 87_1ecd78dd6e8f2fa697110e8af549bc9b_circular=false_4693 to cluster AA405 assigned as already present in cluster AA405
+Not 91_1fa4ab75d09fbccd97d2b516ab6702e4_circular=false_4434 to cluster AA405 assigned as already present in cluster AA405
+Not 94_669046d08bb473b8a2b69859a9c9e7d2_circular=false_4297 to cluster AA405 assigned as already present in cluster AA405
+Not 96_752f2c6e9c169f8b3813467195fbe634_circular=false_4212 to cluster AA405 assigned as already present in cluster AA405
+Not 97_345517f92309e118175dfd778a93e45f_circular=false_4113 to cluster AA405 assigned as already present in cluster AA405
+Not 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 to cluster AA405 assigned as already present in cluster AA405
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AC120 assigned as already present in cluster AA336
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AC120 assigned as already present in cluster AA405
+Not 76_18b04f4968450f92c1553a13eba53d12_circular=false_7848 to cluster AC120 assigned as already present in cluster AC120
+Not 100_efe996f852cc2e11f1aed66978e1de14_circular=false_3937 to cluster AA405 assigned as already present in cluster AA405
+Not 101_8e6303eefb6fc369a5ddaa3d0285cdb2_circular=false_3795 to cluster AA405 assigned as already present in cluster AA405
+Not 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 to cluster AA405 assigned as already present in cluster AA405
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AA405 assigned as already present in cluster AA336
+Not 107_1fb2e45f57c32b60414a585204132556_circular=false_2943 to cluster AA405 assigned as already present in cluster AA405
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AA405 assigned as already present in cluster AA405
+Not 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 to cluster AA405 assigned as already present in cluster AA405
+Not 115_84c13ed4c356b45539a95839bca34060_circular=false_1958 to cluster AA405 assigned as already present in cluster AA405
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA405 assigned as already present in cluster AA942
+Not 119_0278237b4a5082a5799cff47ec7277d1_circular=false_1734 to cluster AA405 assigned as already present in cluster AA405
+Not 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 to cluster AA405 assigned as already present in cluster AA405
+Not 123_80a65b17d7127be491cbdc9d9c70f73f_circular=false_1483 to cluster AA405 assigned as already present in cluster AA405
+Not 125_22a2420479c17264fa368eb1ae659d07_circular=false_1303 to cluster AA405 assigned as already present in cluster AA405
+Not 129_0fe566eee9e80a6cf048016003f04871_circular=false_1146 to cluster AA405 assigned as already present in cluster AA405
+Not 131_393250735d949043c13b312784cb0bf5_circular=false_1098 to cluster AA405 assigned as already present in cluster AA338
+Not 40_0192dc921e4f5eefb7ccc40473d2a097_circular=false_41505 to cluster AA405 assigned as already present in cluster AA405
+Not 50_5e6a97a7c03999263bef221429251ced_circular=false_24801 to cluster AA405 assigned as already present in cluster AA405
+Not 52_cb8be461e329526b38fdf91a1cc810a8_circular=false_22202 to cluster AA405 assigned as already present in cluster AA405
+Not 53_3704bcca876fd3a1102373b9bde589f6_circular=false_21917 to cluster AA405 assigned as already present in cluster AA405
+Not 58_033c4788882d3bf26c502fcc42349c4e_circular=false_15374 to cluster AA405 assigned as already present in cluster AA405
+Not 63_3f0969f1445257b68165e06b4ad1e1d3_circular=false_13381 to cluster AA405 assigned as already present in cluster AA405
+Not 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 to cluster AA405 assigned as already present in cluster AA405
+Not 75_530b80e4b05ed7c218232ea4c9d4e564_circular=false_8421 to cluster AA405 assigned as already present in cluster AA405
+Not 77_fc4424a30081a85ae78139dd9f4a8601_circular=false_7433 to cluster AA405 assigned as already present in cluster AA405
+Not 80_b4d051101ac12658d603249e0a21ec85_circular=false_6971 to cluster AA405 assigned as already present in cluster AA405
+Not 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 to cluster AA405 assigned as already present in cluster AA338
+Not 86_8b1509e79e99bac52477f69d50d98ac4_circular=false_4718 to cluster AA405 assigned as already present in cluster AA405
+Not 87_1ecd78dd6e8f2fa697110e8af549bc9b_circular=false_4693 to cluster AA405 assigned as already present in cluster AA405
+Not 91_1fa4ab75d09fbccd97d2b516ab6702e4_circular=false_4434 to cluster AA405 assigned as already present in cluster AA405
+Not 94_669046d08bb473b8a2b69859a9c9e7d2_circular=false_4297 to cluster AA405 assigned as already present in cluster AA405
+Not 96_752f2c6e9c169f8b3813467195fbe634_circular=false_4212 to cluster AA405 assigned as already present in cluster AA405
+Not 97_345517f92309e118175dfd778a93e45f_circular=false_4113 to cluster AA405 assigned as already present in cluster AA405
+Not 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 to cluster AA405 assigned as already present in cluster AA405
+Not 100_efe996f852cc2e11f1aed66978e1de14_circular=false_3937 to cluster AA405 assigned as already present in cluster AA405
+Not 101_8e6303eefb6fc369a5ddaa3d0285cdb2_circular=false_3795 to cluster AA405 assigned as already present in cluster AA405
+Not 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 to cluster AA405 assigned as already present in cluster AA405
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AA405 assigned as already present in cluster AA336
+Not 107_1fb2e45f57c32b60414a585204132556_circular=false_2943 to cluster AA405 assigned as already present in cluster AA405
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AA405 assigned as already present in cluster AA405
+Not 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 to cluster AA405 assigned as already present in cluster AA405
+Not 115_84c13ed4c356b45539a95839bca34060_circular=false_1958 to cluster AA405 assigned as already present in cluster AA405
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA405 assigned as already present in cluster AA942
+Not 119_0278237b4a5082a5799cff47ec7277d1_circular=false_1734 to cluster AA405 assigned as already present in cluster AA405
+Not 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 to cluster AA405 assigned as already present in cluster AA405
+Not 123_80a65b17d7127be491cbdc9d9c70f73f_circular=false_1483 to cluster AA405 assigned as already present in cluster AA405
+Not 125_22a2420479c17264fa368eb1ae659d07_circular=false_1303 to cluster AA405 assigned as already present in cluster AA405
+Not 129_0fe566eee9e80a6cf048016003f04871_circular=false_1146 to cluster AA405 assigned as already present in cluster AA405
+Not 131_393250735d949043c13b312784cb0bf5_circular=false_1098 to cluster AA405 assigned as already present in cluster AA338
+Not 40_0192dc921e4f5eefb7ccc40473d2a097_circular=false_41505 to cluster AA405 assigned as already present in cluster AA405
+Not 50_5e6a97a7c03999263bef221429251ced_circular=false_24801 to cluster AA405 assigned as already present in cluster AA405
+Not 52_cb8be461e329526b38fdf91a1cc810a8_circular=false_22202 to cluster AA405 assigned as already present in cluster AA405
+Not 53_3704bcca876fd3a1102373b9bde589f6_circular=false_21917 to cluster AA405 assigned as already present in cluster AA405
+Not 58_033c4788882d3bf26c502fcc42349c4e_circular=false_15374 to cluster AA405 assigned as already present in cluster AA405
+Not 63_3f0969f1445257b68165e06b4ad1e1d3_circular=false_13381 to cluster AA405 assigned as already present in cluster AA405
+Not 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 to cluster AA405 assigned as already present in cluster AA405
+Not 75_530b80e4b05ed7c218232ea4c9d4e564_circular=false_8421 to cluster AA405 assigned as already present in cluster AA405
+Not 77_fc4424a30081a85ae78139dd9f4a8601_circular=false_7433 to cluster AA405 assigned as already present in cluster AA405
+Not 80_b4d051101ac12658d603249e0a21ec85_circular=false_6971 to cluster AA405 assigned as already present in cluster AA405
+Not 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 to cluster AA405 assigned as already present in cluster AA338
+Not 86_8b1509e79e99bac52477f69d50d98ac4_circular=false_4718 to cluster AA405 assigned as already present in cluster AA405
+Not 87_1ecd78dd6e8f2fa697110e8af549bc9b_circular=false_4693 to cluster AA405 assigned as already present in cluster AA405
+Not 91_1fa4ab75d09fbccd97d2b516ab6702e4_circular=false_4434 to cluster AA405 assigned as already present in cluster AA405
+Not 94_669046d08bb473b8a2b69859a9c9e7d2_circular=false_4297 to cluster AA405 assigned as already present in cluster AA405
+Not 96_752f2c6e9c169f8b3813467195fbe634_circular=false_4212 to cluster AA405 assigned as already present in cluster AA405
+Not 97_345517f92309e118175dfd778a93e45f_circular=false_4113 to cluster AA405 assigned as already present in cluster AA405
+Not 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 to cluster AA405 assigned as already present in cluster AA405
+Not 100_efe996f852cc2e11f1aed66978e1de14_circular=false_3937 to cluster AA405 assigned as already present in cluster AA405
+Not 101_8e6303eefb6fc369a5ddaa3d0285cdb2_circular=false_3795 to cluster AA405 assigned as already present in cluster AA405
+Not 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 to cluster AA405 assigned as already present in cluster AA405
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AA405 assigned as already present in cluster AA336
+Not 107_1fb2e45f57c32b60414a585204132556_circular=false_2943 to cluster AA405 assigned as already present in cluster AA405
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AA405 assigned as already present in cluster AA405
+Not 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 to cluster AA405 assigned as already present in cluster AA405
+Not 115_84c13ed4c356b45539a95839bca34060_circular=false_1958 to cluster AA405 assigned as already present in cluster AA405
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA405 assigned as already present in cluster AA942
+Not 119_0278237b4a5082a5799cff47ec7277d1_circular=false_1734 to cluster AA405 assigned as already present in cluster AA405
+Not 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 to cluster AA405 assigned as already present in cluster AA405
+Not 123_80a65b17d7127be491cbdc9d9c70f73f_circular=false_1483 to cluster AA405 assigned as already present in cluster AA405
+Not 125_22a2420479c17264fa368eb1ae659d07_circular=false_1303 to cluster AA405 assigned as already present in cluster AA405
+Not 129_0fe566eee9e80a6cf048016003f04871_circular=false_1146 to cluster AA405 assigned as already present in cluster AA405
+Not 131_393250735d949043c13b312784cb0bf5_circular=false_1098 to cluster AA405 assigned as already present in cluster AA338
+Not 40_0192dc921e4f5eefb7ccc40473d2a097_circular=false_41505 to cluster AA405 assigned as already present in cluster AA405
+Not 50_5e6a97a7c03999263bef221429251ced_circular=false_24801 to cluster AA405 assigned as already present in cluster AA405
+Not 52_cb8be461e329526b38fdf91a1cc810a8_circular=false_22202 to cluster AA405 assigned as already present in cluster AA405
+Not 53_3704bcca876fd3a1102373b9bde589f6_circular=false_21917 to cluster AA405 assigned as already present in cluster AA405
+Not 58_033c4788882d3bf26c502fcc42349c4e_circular=false_15374 to cluster AA405 assigned as already present in cluster AA405
+Not 63_3f0969f1445257b68165e06b4ad1e1d3_circular=false_13381 to cluster AA405 assigned as already present in cluster AA405
+Not 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 to cluster AA405 assigned as already present in cluster AA405
+Not 75_530b80e4b05ed7c218232ea4c9d4e564_circular=false_8421 to cluster AA405 assigned as already present in cluster AA405
+Not 77_fc4424a30081a85ae78139dd9f4a8601_circular=false_7433 to cluster AA405 assigned as already present in cluster AA405
+Not 80_b4d051101ac12658d603249e0a21ec85_circular=false_6971 to cluster AA405 assigned as already present in cluster AA405
+Not 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 to cluster AA405 assigned as already present in cluster AA338
+Not 86_8b1509e79e99bac52477f69d50d98ac4_circular=false_4718 to cluster AA405 assigned as already present in cluster AA405
+Not 87_1ecd78dd6e8f2fa697110e8af549bc9b_circular=false_4693 to cluster AA405 assigned as already present in cluster AA405
+Not 91_1fa4ab75d09fbccd97d2b516ab6702e4_circular=false_4434 to cluster AA405 assigned as already present in cluster AA405
+Not 94_669046d08bb473b8a2b69859a9c9e7d2_circular=false_4297 to cluster AA405 assigned as already present in cluster AA405
+Not 96_752f2c6e9c169f8b3813467195fbe634_circular=false_4212 to cluster AA405 assigned as already present in cluster AA405
+Not 97_345517f92309e118175dfd778a93e45f_circular=false_4113 to cluster AA405 assigned as already present in cluster AA405
+Not 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 to cluster AA405 assigned as already present in cluster AA405
+Not 100_efe996f852cc2e11f1aed66978e1de14_circular=false_3937 to cluster AA405 assigned as already present in cluster AA405
+Not 101_8e6303eefb6fc369a5ddaa3d0285cdb2_circular=false_3795 to cluster AA405 assigned as already present in cluster AA405
+Not 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 to cluster AA405 assigned as already present in cluster AA405
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AA405 assigned as already present in cluster AA336
+Not 107_1fb2e45f57c32b60414a585204132556_circular=false_2943 to cluster AA405 assigned as already present in cluster AA405
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AA405 assigned as already present in cluster AA405
+Not 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 to cluster AA405 assigned as already present in cluster AA405
+Not 115_84c13ed4c356b45539a95839bca34060_circular=false_1958 to cluster AA405 assigned as already present in cluster AA405
+2026-11-04 09:43:16,127 root INFO: Writting contig results to resultados/05_mob/pc1/contig_report.txt [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1387]
+2026-11-04 09:43:16,964 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AA338.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,055 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AA405.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,105 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AA452.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 211759 was translated into 615
+  warnings.warn("taxid %s was translated into %s" %(taxid, merged_conversion[taxid]))
+2026-11-04 09:43:17,172 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AE809.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,178 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AB714.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,182 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AA941.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,197 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AA048.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,227 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AC120.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,244 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AD092.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,250 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AA942.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,254 root INFO: Writting plasmid sequences to resultados/05_mob/pc1/plasmid_AA111.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:971]
+2026-11-04 09:43:17,260 root INFO: Writting chromosome sequences to resultados/05_mob/pc1/chromosome.fasta [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1404]
+/home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:338: FutureWarning: the 'line_terminator'' keyword is deprecated, use 'lineterminator' instead.
+  blast_df.to_csv(blast_results_file, sep='\t', header=True, line_terminator='\n', index=False)
+2026-11-04 09:43:18,056 root INFO: Creating plasmid biomarkers report ... [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/utils.py:1382]
+2026-11-04 09:43:18,243 root INFO: Writting plasmid biomarkers report contaning 48 biomarkers [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1478]
+2026-11-04 09:43:18,244 root INFO: Cleaning up temporary files resultados/05_mob/pc1/__tmp [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1484]
+2026-11-04 09:43:18,248 mob_suite.mob_recon INFO: MOB-recon completed and results written to resultados/05_mob/pc1 [in /home/lusa/miniconda3/envs/mob_suite/lib/python3.11/site-packages/mob_suite/mob_recon.py:1486]
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA405 assigned as already present in cluster AA942
+Not 119_0278237b4a5082a5799cff47ec7277d1_circular=false_1734 to cluster AA405 assigned as already present in cluster AA405
+Not 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 to cluster AA405 assigned as already present in cluster AA405
+Not 123_80a65b17d7127be491cbdc9d9c70f73f_circular=false_1483 to cluster AA405 assigned as already present in cluster AA405
+Not 125_22a2420479c17264fa368eb1ae659d07_circular=false_1303 to cluster AA405 assigned as already present in cluster AA405
+Not 129_0fe566eee9e80a6cf048016003f04871_circular=false_1146 to cluster AA405 assigned as already present in cluster AA405
+Not 131_393250735d949043c13b312784cb0bf5_circular=false_1098 to cluster AA405 assigned as already present in cluster AA338
+Not 40_0192dc921e4f5eefb7ccc40473d2a097_circular=false_41505 to cluster AA405 assigned as already present in cluster AA405
+Not 50_5e6a97a7c03999263bef221429251ced_circular=false_24801 to cluster AA405 assigned as already present in cluster AA405
+Not 52_cb8be461e329526b38fdf91a1cc810a8_circular=false_22202 to cluster AA405 assigned as already present in cluster AA405
+Not 53_3704bcca876fd3a1102373b9bde589f6_circular=false_21917 to cluster AA405 assigned as already present in cluster AA405
+Not 58_033c4788882d3bf26c502fcc42349c4e_circular=false_15374 to cluster AA405 assigned as already present in cluster AA405
+Not 63_3f0969f1445257b68165e06b4ad1e1d3_circular=false_13381 to cluster AA405 assigned as already present in cluster AA405
+Not 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 to cluster AA405 assigned as already present in cluster AA405
+Not 75_530b80e4b05ed7c218232ea4c9d4e564_circular=false_8421 to cluster AA405 assigned as already present in cluster AA405
+Not 77_fc4424a30081a85ae78139dd9f4a8601_circular=false_7433 to cluster AA405 assigned as already present in cluster AA405
+Not 80_b4d051101ac12658d603249e0a21ec85_circular=false_6971 to cluster AA405 assigned as already present in cluster AA405
+Not 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 to cluster AA405 assigned as already present in cluster AA338
+Not 86_8b1509e79e99bac52477f69d50d98ac4_circular=false_4718 to cluster AA405 assigned as already present in cluster AA405
+Not 87_1ecd78dd6e8f2fa697110e8af549bc9b_circular=false_4693 to cluster AA405 assigned as already present in cluster AA405
+Not 91_1fa4ab75d09fbccd97d2b516ab6702e4_circular=false_4434 to cluster AA405 assigned as already present in cluster AA405
+Not 94_669046d08bb473b8a2b69859a9c9e7d2_circular=false_4297 to cluster AA405 assigned as already present in cluster AA405
+Not 96_752f2c6e9c169f8b3813467195fbe634_circular=false_4212 to cluster AA405 assigned as already present in cluster AA405
+Not 97_345517f92309e118175dfd778a93e45f_circular=false_4113 to cluster AA405 assigned as already present in cluster AA405
+Not 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 to cluster AA405 assigned as already present in cluster AA405
+Not 100_efe996f852cc2e11f1aed66978e1de14_circular=false_3937 to cluster AA405 assigned as already present in cluster AA405
+Not 101_8e6303eefb6fc369a5ddaa3d0285cdb2_circular=false_3795 to cluster AA405 assigned as already present in cluster AA405
+Not 103_cd4b79ea638ec3009dea30e1195dba76_circular=false_3445 to cluster AA405 assigned as already present in cluster AA405
+Not 106_832dd5bf71ce87fdc945db1f5a2f2586_circular=false_3077 to cluster AA405 assigned as already present in cluster AA336
+Not 107_1fb2e45f57c32b60414a585204132556_circular=false_2943 to cluster AA405 assigned as already present in cluster AA405
+Not 108_6ade5c860c377a8d2c5d8ff34c754138_circular=false_2881 to cluster AA405 assigned as already present in cluster AA405
+Not 114_2d69223ab8dcc03d20285a91f1e1e297_circular=false_2279 to cluster AA405 assigned as already present in cluster AA405
+Not 115_84c13ed4c356b45539a95839bca34060_circular=false_1958 to cluster AA405 assigned as already present in cluster AA405
+Not 116_68b25b8caed70c1db53afc590bdc2721_circular=false_1892 to cluster AA405 assigned as already present in cluster AA942
+Not 119_0278237b4a5082a5799cff47ec7277d1_circular=false_1734 to cluster AA405 assigned as already present in cluster AA405
+Not 120_00c34cc5563c97bd67c7b73481d417b9_circular=false_1536 to cluster AA405 assigned as already present in cluster AA405
+Not 123_80a65b17d7127be491cbdc9d9c70f73f_circular=false_1483 to cluster AA405 assigned as already present in cluster AA405
+Not 125_22a2420479c17264fa368eb1ae659d07_circular=false_1303 to cluster AA405 assigned as already present in cluster AA405
+Not 129_0fe566eee9e80a6cf048016003f04871_circular=false_1146 to cluster AA405 assigned as already present in cluster AA405
+Not 131_393250735d949043c13b312784cb0bf5_circular=false_1098 to cluster AA405 assigned as already present in cluster AA338
+Not 40_0192dc921e4f5eefb7ccc40473d2a097_circular=false_41505 to cluster AA405 assigned as already present in cluster AA405
+Not 50_5e6a97a7c03999263bef221429251ced_circular=false_24801 to cluster AA405 assigned as already present in cluster AA405
+Not 52_cb8be461e329526b38fdf91a1cc810a8_circular=false_22202 to cluster AA405 assigned as already present in cluster AA405
+Not 53_3704bcca876fd3a1102373b9bde589f6_circular=false_21917 to cluster AA405 assigned as already present in cluster AA405
+Not 58_033c4788882d3bf26c502fcc42349c4e_circular=false_15374 to cluster AA405 assigned as already present in cluster AA405
+Not 63_3f0969f1445257b68165e06b4ad1e1d3_circular=false_13381 to cluster AA405 assigned as already present in cluster AA405
+Not 67_8614c7d04ac91de03d0dc350591a67e3_circular=false_10890 to cluster AA405 assigned as already present in cluster AA405
+Not 75_530b80e4b05ed7c218232ea4c9d4e564_circular=false_8421 to cluster AA405 assigned as already present in cluster AA405
+Not 77_fc4424a30081a85ae78139dd9f4a8601_circular=false_7433 to cluster AA405 assigned as already present in cluster AA405
+Not 80_b4d051101ac12658d603249e0a21ec85_circular=false_6971 to cluster AA405 assigned as already present in cluster AA405
+Not 83_431fb9fe3d76d811a112aa039ba2dd58_circular=false_5029 to cluster AA405 assigned as already present in cluster AA338
+Not 86_8b1509e79e99bac52477f69d50d98ac4_circular=false_4718 to cluster AA405 assigned as already present in cluster AA405
+Not 87_1ecd78dd6e8f2fa697110e8af549bc9b_circular=false_4693 to cluster AA405 assigned as already present in cluster AA405
+Not 91_1fa4ab75d09fbccd97d2b516ab6702e4_circular=false_4434 to cluster AA405 assigned as already present in cluster AA405
+Not 94_669046d08bb473b8a2b69859a9c9e7d2_circular=false_4297 to cluster AA405 assigned as already present in cluster AA405
+Not 96_752f2c6e9c169f8b3813467195fbe634_circular=false_4212 to cluster AA405 assigned as already present in cluster AA405
+Not 97_345517f92309e118175dfd778a93e45f_circular=false_4113 to cluster AA405 assigned as already present in cluster AA405
+Not 99_f87e31378bedd86666784542e826cc5c_circular=false_4034 to cluster AA405 assigned as already present in cluster AA405

@@ -1,0 +1,26 @@
+# Documentação e scripts
+!/README.md
+!/docs/
+!/scripts/
+!/img/
+
+# Genomas
+!/genomas_completos/
+!/genomas_completos/*
+
+# Dados brutos
+/Paired-end_data/
+
+# Resultados do fastp
+/fastp_output/
+
+# Resultados das análises
+/resultados/
+
+# Bancos de dados do BUSCO
+/busco_downloads/
+
+# Outros arquivos temporários
+*.log
+*.tmp
+*.bak
